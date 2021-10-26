@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UisraelSistemaCalificaciones.Calificaciones">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="txtUser" 
+                           IsReadOnly="True"
+                           TextColor="White" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Grid.Row="0" 
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"/>
+
+                    <Label Text="Sistema de calificaciones" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="White" 
+                           FontSize="22"
+                           Grid.Row="1" 
+                           Grid.Column="0" 
+                           Grid.ColumnSpan="2"/>
+                    
+                </Grid>
+                
+            </Frame>
+
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Parcial 1" 
+                       HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="Subtitle"
+                       Grid.Row="0" 
+                       Grid.Column="0" 
+                       Grid.ColumnSpan="2"/>
+
+                <Label Text="Nota seguimiento 1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="1" 
+                       Grid.Column="0" />
+
+                <Entry x:Name="txtNotaSeguimineto1" 
+                       Keyboard="Numeric"
+                       Grid.Row="1" 
+                       Grid.Column="1" />
+
+                <Label Text="Nota exàmen 1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="2" 
+                       Grid.Column="0" />
+
+                <Entry x:Name="txtNotaExamen1" 
+                       Keyboard="Numeric"
+                       Grid.Row="2" 
+                       Grid.Column="1"/>
+
+                <Label Text="Nota parcial 1" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtNotaParcial1" 
+                       IsReadOnly="True"
+                       Grid.Row="3" 
+                       Grid.Column="1"/>
+
+            </Grid>
+            
+            
+            
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Parcial 2" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       FontSize="Subtitle"
+                       Grid.Row="0" 
+                       Grid.Column="0" 
+                       Grid.ColumnSpan="2"/>
+                
+                <Label Text="Nota seguimiento 2"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="1" 
+                       Grid.Column="0" />
+
+                <Entry x:Name="txtNotaSeguimineto2" 
+                       Keyboard="Numeric"
+                       Grid.Row="1" 
+                       Grid.Column="1" />
+
+                <Label Text="Nota exàmen 2"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="2" 
+                       Grid.Column="0" />
+
+                <Entry x:Name="txtNotaExamen2" 
+                       Keyboard="Numeric"
+                       Grid.Row="2" 
+                       Grid.Column="1"/>
+
+                <Label Text="Nota parcial 2" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <Entry x:Name="txtNotaParcial2" 
+                       IsReadOnly="True"
+                       Grid.Row="3" 
+                       Grid.Column="1"/>
+
+            </Grid>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                 <Label  Text="Nota Final" 
+                         FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Grid.Row="0" 
+                        Grid.Column="0"/>
+            
+                <Entry x:Name="txtNotaFinal" 
+                       IsReadOnly="True"
+                       Grid.Row="0" 
+                       Grid.Column="1"/>
+
+                <Button x:Name="btnCalcular" 
+                        Grid.Row="1" 
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Text="Calcular" 
+                        Clicked="btnCalcularNotaFinal"></Button>               
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
